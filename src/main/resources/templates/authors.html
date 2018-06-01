@@ -13,8 +13,8 @@
             <th>Lastname</th>
         </tr>
         <tr th:each="author:${authors}">
-            <td th:text="${author.firstName}"/>
-            <td th:text="${author.lastName}"/>
+            <td th:text="${author.firstName}"/> <!-- Reads value of field 'firstName' declared in Author.class -->
+            <td th:text="${author.lastName}"/> <!-- Reads value of field 'lastName' declared in Author.class -->
         </tr>
     </table>
 
