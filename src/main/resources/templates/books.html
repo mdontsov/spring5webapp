@@ -14,9 +14,9 @@
             <th>Publisher</th>
         </tr>
         <tr th:each="book:${books}"> <!-- Iterates over Book entity -->
-            <td th:text="${book.id}">123</td> <!-- Reads value of field 'id' declared in Book.class -->
-            <td th:text="${book.title}">Spring in Action</td> <!-- Reads value of field 'title' declared in Book.class -->
-            <td th:text="${book.publisher.name}">Wrox</td> <!-- Reads value of field 'name' declared in Publisher.class -->
+            <td th:text="${book.id}">TEST.Book.ID</td> <!-- Reads value of field 'id' declared in Book.class -->
+            <td th:text="${book.title}">TEST.Book.Title</td> <!-- Reads value of field 'title' declared in Book.class -->
+            <td th:text="${book.publisher.name}">TEST.Publisher.Name</td> <!-- Reads value of field 'name' declared in Publisher.class -->
         </tr>
     </table>
 

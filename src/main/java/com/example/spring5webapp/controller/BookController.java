@@ -17,6 +17,6 @@ public class BookController {
     @RequestMapping("/books") //associated URL view
     public String getBooks(Model model) {
         model. addAttribute("books", bookRepository.findAll());
-        return "books"; //associated Thymeleaf view name
+        return "books"; //Return 'books' thymeleaf template
     }
 }

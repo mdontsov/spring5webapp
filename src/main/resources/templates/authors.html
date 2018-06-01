@@ -9,12 +9,14 @@
 
     <table>
         <tr>
+            <th>ID</th>
             <th>Firstname</th>
             <th>Lastname</th>
         </tr>
-        <tr th:each="author:${authors}">
-            <td th:text="${author.firstName}"/> <!-- Reads value of field 'firstName' declared in Author.class -->
-            <td th:text="${author.lastName}"/> <!-- Reads value of field 'lastName' declared in Author.class -->
+        <tr th:each="author:${authors}"> <!-- Iterates over authors entity -->
+            <td th:text="${author.id}">TEST.Author.ID</td> <!-- Reads value of field AS-IS 'id' declared in Author.class -->
+            <td th:text="${author.firstName}">TEST.Author.Firstname</td> <!-- Reads value of field AS-IS 'firstName' declared in Author.class -->
+            <td th:text="${author.lastName}">TEST.Author.Lastname</td> <!-- Reads value of field AS-IS 'lastName' declared in Author.class -->
         </tr>
     </table>
 
